@@ -185,7 +185,9 @@ let mediasoupRouter;
     });
     socketServer.on('connection', (socket) => {
         console.log('A user connected');
-        let viewerCount = socketServer.engine.clientsCount;
+        let viewerCount = 0;
+        // let viewerCount = socketServer.engine.clientsCount;
+        console.log(viewerCount, "-------------");
         socket.emit('viewer-count', viewerCount);
         socket.on('join-as-streamer', (streamerId) => __awaiter(void 0, void 0, void 0, function* () {
             console.log('Streamer joined:', streamerId);
