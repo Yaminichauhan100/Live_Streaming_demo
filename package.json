@@ -19,6 +19,7 @@
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "mediasoup": "^3.13.24",
+    "mediasoup-client": "^3.7.6",
     "peer": "^0.6.1",
     "peerjs": "^1.5.2",
     "peerjs-server": "^0.2.9",
